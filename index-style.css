@@ -62,7 +62,7 @@ h2{
   position: relative;
   text-align: center;
   font-family: NeutralFace;
-  font-size: 60px;
+  font-size: 55px;
   letter-spacing: 5px;
   margin-bottom: -90px;
   z-index: 2;
@@ -109,7 +109,36 @@ a {
 .lyrics{
   padding-top: 160px;
   -webkit-text-stroke:0.5px #ffff ;
+}
 
+.content p {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 140px;
+  position: relative;
+  font-family: NeutralFace;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #ffff;
+  text-align: center;
+}
+
+.content button {
+  background:none;
+  border: solid 3px ;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  position: relative;
+  font-family: NeutralFace;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #ffff ;
+}
+
+.morebtn{
+  text-align: center;
 }
 
 @font-face{
