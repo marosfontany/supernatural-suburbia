@@ -13,7 +13,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 } 
 
 body{
@@ -41,18 +41,20 @@ body{
   min-height: 100%;
   object-fit: cover;
   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   background-color: rgba(52, 16, 16, 0.40);
 }
 
 
 h1{
-  padding-top: 100px;
+  padding-top: 140px;
   color: #ffff;
   position: relative;
   text-align: center;
   font-family: NeutralFace;
   font-size: 36px;
   letter-spacing: 5px;
+  text-transform: uppercase;
   
 }
 
@@ -66,6 +68,7 @@ h2{
   letter-spacing: 5px;
   margin-bottom: -90px;
   z-index: 2;
+  text-transform: uppercase;
 }
 
 .circle{
@@ -78,13 +81,16 @@ h2{
   margin: auto;
 }
 
-.scrolldown{
-  display: flex;
+.scrolldown {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
 }
 
 .vl{
-  margin-top: -98px;
-  margin-left: 50px;
+  margin-top: 20px;
+  margin: auto;
+  text-align: center;
   border-left: 3px solid;
   position: relative;
   height: 379px;
@@ -92,14 +98,14 @@ h2{
 }
 
 h3{
-  padding-top: 255px;
-  margin-left: 10px;
-  text-align: left;
+  padding-top: 30px;
+  text-align: center;
   position: relative;
   font-family: NeutralFace;
   font-size: 20px;
   letter-spacing: 5px;
   color: #ffff;
+  text-transform: uppercase;
 }
 
 a {
@@ -107,7 +113,7 @@ a {
 }
 
 .lyrics{
-  padding-top: 160px;
+  padding-top: 50px;
   -webkit-text-stroke:0.5px #ffff ;
 }
 
@@ -117,31 +123,48 @@ a {
   padding-top: 140px;
   position: relative;
   font-family: NeutralFace;
-  font-size: 20px;
-  letter-spacing: 5px;
+  font-size: 16px;
+  letter-spacing: 8px;
   color: #ffff;
   text-align: center;
 }
 
 .content button {
-  background:none;
-  border: solid 3px ;
-  cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 10px;
+  background: none;
+  border: none;
   position: relative;
+  color: #ffff ;
   font-family: NeutralFace;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 5px;
   color: #ffff ;
+  cursor: pointer;
+  padding: 28% 10%;
+}
+
+#more {
+  display: none;
 }
 
 .morebtn{
+  position: relative;
   text-align: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background:none;
+  border: solid 2px #ffff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #ffff ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 @font-face{
   font-family:NeutralFace;
-  src:url("/fonts/NeutralFace.otf");
+  src:url("NeutralFace.otf") format("opentype");
+  font-display: fallback;
 }
