@@ -1,6 +1,6 @@
 
 var vid = document.getElementById("backgroundvideo");
-vid.playbackRate = 0.6;
+vid.playbackRate = 0.5;
 
 
 
@@ -15,9 +15,14 @@ function myFunction() {
       dots.style.display = "inline";
       btnText.innerHTML = "view all lyrics"; 
       moreText.style.display = "none";
-    } else {
+    } 
+    
+    else {
       dots.style.display = "none";
       btnText.innerHTML = "close"; 
       moreText.style.display = "inline";
     }
   }
+
+
+

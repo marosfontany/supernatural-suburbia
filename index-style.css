@@ -168,3 +168,52 @@ a {
   src:url("NeutralFace.otf") format("opentype");
   font-display: fallback;
 }
+
+.socialmedia{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding-top: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.icons{
+  position: relative;
+  text-align: center;
+  padding-bottom: 35px;
+  background-color: rgba(54, 11, 11, 0.3);
+
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 (viewed 13/04/2022) */
+.fa {
+  padding: 20px;
+  font-size: 30px !important;
+  width: 30px;
+  text-align: center;
+  margin: 3px 6px;
+  border-radius: 50%;
+}
+
+
+.fa-instagram{
+  background:none;
+  border: solid 2px #ffff;
+  color: white;
+
+}
+
+.fa-facebook {
+  background:none;
+  border: solid 2px #ffff;
+  color: white;
+
+}
+
+.fa-youtube{
+  background:none;
+  border: solid 2px #ffff;
+  color: white;
+}
