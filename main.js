@@ -25,4 +25,16 @@ function myFunction() {
   }
 
 
+/* custom cursor taken from https://www.youtube.com/watch?v=TpwpAYi-p2w (viewed 15/04/2022) */
+
+let mouseCursor = document.querySelector(".cursor");
+let title = document.querySelector("heading");
+
+
+window.addEventListener("mousemove", cursor);
+
+function cursor(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
 

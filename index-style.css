@@ -13,6 +13,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
 } 
 
@@ -59,7 +60,7 @@ h1{
 }
 
 h2{
-  -webkit-text-stroke:1px #A11324 ;
+  -webkit-text-stroke:1px #FCD12A ;
   -webkit-text-fill-color: transparent;
   position: relative;
   text-align: center;
@@ -91,10 +92,25 @@ h2{
   margin-top: 20px;
   margin: auto;
   text-align: center;
-  border-left: 3px solid;
+  border-left: 2px solid;
   position: relative;
   height: 379px;
   color: #ffff;
+}
+
+.vl-footer {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-inline-box;
+  height: 279px;
+}
+
+.vl-footer-2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  height: 100px;
+  margin-top: 35px;
 }
 
 h3{
@@ -102,7 +118,7 @@ h3{
   text-align: center;
   position: relative;
   font-family: NeutralFace;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 5px;
   color: #ffff;
   text-transform: uppercase;
@@ -122,11 +138,17 @@ a {
   margin-right: 20px;
   padding-top: 140px;
   position: relative;
-  font-family: NeutralFace;
+  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 8px;
   color: #ffff;
   text-align: center;
+}
+
+.whole-verse {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .content button {
@@ -163,12 +185,6 @@ a {
 
 }
 
-@font-face{
-  font-family:NeutralFace;
-  src:url("NeutralFace.otf") format("opentype");
-  font-display: fallback;
-}
-
 .socialmedia{
   text-align: center;
   font-size: 30px;
@@ -176,6 +192,7 @@ a {
   padding-top: 45px;
   margin-left: 10px;
   margin-right: 10px;
+  -webkit-text-stroke:0.5px #ffff ;
 
 }
 
@@ -183,6 +200,7 @@ a {
   position: relative;
   text-align: center;
   padding-bottom: 35px;
+  padding-top: 35px;
   background-color: rgba(54, 11, 11, 0.3);
 
 }
@@ -190,8 +208,8 @@ a {
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 (viewed 13/04/2022) */
 .fa {
   padding: 20px;
-  font-size: 30px !important;
-  width: 30px;
+  font-size: 25px !important;
+  width: 25px;
   text-align: center;
   margin: 3px 6px;
   border-radius: 50%;
@@ -216,4 +234,35 @@ a {
   background:none;
   border: solid 2px #ffff;
   color: white;
+}
+
+.cursor {
+  display: none;
+}
+
+@media(min-width: 1400px) {
+  .cursor { /* https://www.youtube.com/watch?v=TpwpAYi-p2w (viewed 15/04/2022) */
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    translate: (-50%, -50%);
+    pointer-events: none;
+    transition: all 0.1s ease;
+  }
+
+  .whole-verse {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+
+}
+
+@font-face{
+  font-family:NeutralFace;
+  src:url("NeutralFace.otf") format("opentype");
+  font-display: fallback;
 }
