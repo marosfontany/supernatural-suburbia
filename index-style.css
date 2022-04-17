@@ -243,20 +243,33 @@ a {
 @media(min-width: 1400px) {
   .cursor { /* https://www.youtube.com/watch?v=TpwpAYi-p2w (viewed 15/04/2022) */
     display: block;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: 3px solid #fff;
     border-radius: 50%;
     position: relative;
     z-index: 9;
     translate: (-50%, -50%);
     pointer-events: none;
-    transition: all 0.1s ease;
   }
 
   .whole-verse {
     margin-right: 20%;
     margin-left: 20%;
+  }
+
+  h1 {
+    padding-top: 70px;
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 65px;
+  }
+
+  .circle {
+    width: 400px;
+    height: 400px;
   }
 
 }
