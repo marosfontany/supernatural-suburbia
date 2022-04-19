@@ -38,26 +38,8 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + "px";
 }
 
-var loader = document.getElementById("preloader");
-var content = document.querySelector(".content");
+setTimeout(() => {
+  var loader = document.getElementById("preloader");
 
-function init() {
-  setTimeout(() => {
-    loader.style.opacity = 0;
-    loader.style.display = "none";
-
-    content.style.display = "block";
-    setTimeout(() => (content.style.opacity = 1), 50);
-  }, 4000);
-}
-
-
-/* dkkd
-
-var loader = document.getElementById("preloader");
-
-window.addEventListener("load", function() {
-  loader.style.display = "none";
-})
-*/
-
+  loader.style.visibility = "hidden";
+}, 2000);
