@@ -180,6 +180,7 @@ h1{
   font-size: 36px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  z-index: 2;
   
 }
 
@@ -454,6 +455,7 @@ a {
 
   h2 {
     font-size: 65px;
+    margin-bottom: -110px;
   }
 
   .circle {
